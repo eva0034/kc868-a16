@@ -16,7 +16,7 @@ web_server:
   port: 80
 
 dashboard_import:
-  package_import_url: github://hzkincony/kc868-a16/kc868-a16.yaml@main
+  package_import_url: github://eva0034/kc868-a16/kc868-a16.yaml@main
 
 ota:
   password: ""
@@ -54,14 +54,16 @@ pcf8574:
 switch:
   - platform: gpio
     name: "light1"
+    id: "light1"
     pin:
       pcf8574: pcf8574_hub_out_1
       number: 0
       mode: OUTPUT
       inverted: false
-
+    
   - platform: gpio
     name: "light2"
+    id: "light2"
     pin:
       pcf8574: pcf8574_hub_out_1
       number: 1
@@ -70,6 +72,7 @@ switch:
 
   - platform: gpio
     name: "light3"
+    id: "light3"
     pin:
       pcf8574: pcf8574_hub_out_1
       number: 2
@@ -78,6 +81,7 @@ switch:
 
   - platform: gpio
     name: "light4"
+    id: "light4"
     pin:
       pcf8574: pcf8574_hub_out_1
       number: 3
@@ -86,6 +90,7 @@ switch:
 
   - platform: gpio
     name: "light5"
+    id: "light5"
     pin:
       pcf8574: pcf8574_hub_out_1
       number: 4
@@ -94,6 +99,7 @@ switch:
 
   - platform: gpio
     name: "light6"
+    id: "light6"
     pin:
       pcf8574: pcf8574_hub_out_1
       number: 5
@@ -102,6 +108,7 @@ switch:
 
   - platform: gpio
     name: "light7"
+    id: "light7"
     pin:
       pcf8574: pcf8574_hub_out_1
       number: 6
@@ -110,6 +117,7 @@ switch:
 
   - platform: gpio
     name: "light8"
+    id: "light8"
     pin:
       pcf8574: pcf8574_hub_out_1
       number: 7
@@ -118,6 +126,7 @@ switch:
 
   - platform: gpio
     name: "light9"
+    id: "light9"
     pin:
       pcf8574: pcf8574_hub_out_2
       number: 0
@@ -126,6 +135,7 @@ switch:
 
   - platform: gpio
     name: "light10"
+    id: "light10"
     pin:
       pcf8574: pcf8574_hub_out_2
       number: 1
@@ -134,6 +144,7 @@ switch:
 
   - platform: gpio
     name: "light11"
+    id: "light11"
     pin:
       pcf8574: pcf8574_hub_out_2
       number: 2
@@ -142,6 +153,7 @@ switch:
 
   - platform: gpio
     name: "light12"
+    id: "light12"
     pin:
       pcf8574: pcf8574_hub_out_2
       number: 3
@@ -150,6 +162,7 @@ switch:
 
   - platform: gpio
     name: "light13"
+    id: "light13"
     pin:
       pcf8574: pcf8574_hub_out_2
       number: 4
@@ -158,6 +171,7 @@ switch:
 
   - platform: gpio
     name: "light14"
+    id: "light14"
     pin:
       pcf8574: pcf8574_hub_out_2
       number: 5
@@ -166,6 +180,7 @@ switch:
 
   - platform: gpio
     name: "light15"
+    id: "light15"
     pin:
       pcf8574: pcf8574_hub_out_2
       number: 6
@@ -174,6 +189,7 @@ switch:
 
   - platform: gpio
     name: "light16"
+    id: "light16"
     pin:
       pcf8574: pcf8574_hub_out_2
       number: 7
@@ -188,6 +204,8 @@ binary_sensor:
       number: 0
       mode: INPUT
       inverted: false
+    on_press:
+    - switch.toggle: "light1"
 
   - platform: gpio
     name: "input2"
@@ -196,6 +214,8 @@ binary_sensor:
       number: 1
       mode: INPUT
       inverted: false
+    on_press:
+    - switch.toggle: "light2"
 
   - platform: gpio
     name: "input3"
@@ -204,6 +224,8 @@ binary_sensor:
       number: 2
       mode: INPUT
       inverted: false
+    on_press:
+    - switch.toggle: "light3"
 
   - platform: gpio
     name: "input4"
@@ -212,6 +234,8 @@ binary_sensor:
       number: 3
       mode: INPUT
       inverted: false
+    on_press:
+    - switch.toggle: "light4"
 
   - platform: gpio
     name: "input5"
@@ -220,6 +244,8 @@ binary_sensor:
       number: 4
       mode: INPUT
       inverted: false
+    on_press:
+    - switch.toggle: "light5"
 
   - platform: gpio
     name: "input6"
@@ -228,6 +254,8 @@ binary_sensor:
       number: 5
       mode: INPUT
       inverted: false
+    on_press:
+    - switch.toggle: "light6"
 
   - platform: gpio
     name: "input7"
@@ -236,6 +264,8 @@ binary_sensor:
       number: 6
       mode: INPUT
       inverted: false
+    on_press:
+    - switch.toggle: "light7"
 
   - platform: gpio
     name: "input8"
@@ -244,6 +274,8 @@ binary_sensor:
       number: 7
       mode: INPUT
       inverted: false
+    on_press:
+    - switch.toggle: "light8"
 
   - platform: gpio
     name: "input9"
@@ -252,6 +284,8 @@ binary_sensor:
       number: 0
       mode: INPUT
       inverted: false
+    on_press:
+    - switch.toggle: "light9"
 
   - platform: gpio
     name: "input10"
@@ -260,6 +294,8 @@ binary_sensor:
       number: 1
       mode: INPUT
       inverted: false
+    on_press:
+    - switch.toggle: "light10"
 
   - platform: gpio
     name: "input11"
@@ -268,6 +304,8 @@ binary_sensor:
       number: 2
       mode: INPUT
       inverted: false
+    on_press:
+    - switch.toggle: "light11"
 
   - platform: gpio
     name: "input12"
@@ -276,6 +314,8 @@ binary_sensor:
       number: 3
       mode: INPUT
       inverted: false
+    on_press:
+    - switch.toggle: "light12"
 
   - platform: gpio
     name: "input13"
@@ -284,6 +324,8 @@ binary_sensor:
       number: 4
       mode: INPUT
       inverted: false
+    on_press:
+    - switch.toggle: "light13"
 
   - platform: gpio
     name: "input14"
@@ -292,6 +334,8 @@ binary_sensor:
       number: 5
       mode: INPUT
       inverted: false
+    on_press:
+    - switch.toggle: "light14"
 
   - platform: gpio
     name: "input15"
@@ -300,6 +344,8 @@ binary_sensor:
       number: 6
       mode: INPUT
       inverted: false
+    on_press:
+    - switch.toggle: "light15"
 
   - platform: gpio
     name: "input16"
@@ -308,6 +354,9 @@ binary_sensor:
       number: 7
       mode: INPUT
       inverted: false
+    on_press:
+    - switch.toggle: "light16"
+
 
 # Enable logging
 logger:
