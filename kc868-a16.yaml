@@ -59,7 +59,7 @@ switch:
       pcf8574: pcf8574_hub_out_1
       number: 0
       mode: OUTPUT
-      inverted: true
+      inverted: false
     
   - platform: gpio
     name: "light2"
@@ -68,7 +68,7 @@ switch:
       pcf8574: pcf8574_hub_out_1
       number: 1
       mode: OUTPUT
-      inverted: true
+      inverted: false
 
   - platform: gpio
     name: "light3"
@@ -77,7 +77,7 @@ switch:
       pcf8574: pcf8574_hub_out_1
       number: 2
       mode: OUTPUT
-      inverted: true
+      inverted: false
 
   - platform: gpio
     name: "light4"
@@ -86,7 +86,7 @@ switch:
       pcf8574: pcf8574_hub_out_1
       number: 3
       mode: OUTPUT
-      inverted: true
+      inverted: false
 
   - platform: gpio
     name: "light5"
@@ -95,7 +95,7 @@ switch:
       pcf8574: pcf8574_hub_out_1
       number: 4
       mode: OUTPUT
-      inverted: true
+      inverted: false
 
   - platform: gpio
     name: "light6"
@@ -104,7 +104,7 @@ switch:
       pcf8574: pcf8574_hub_out_1
       number: 5
       mode: OUTPUT
-      inverted: true
+      inverted: false
 
   - platform: gpio
     name: "light7"
@@ -113,7 +113,7 @@ switch:
       pcf8574: pcf8574_hub_out_1
       number: 6
       mode: OUTPUT
-      inverted: true
+      inverted: false
 
   - platform: gpio
     name: "light8"
@@ -122,7 +122,7 @@ switch:
       pcf8574: pcf8574_hub_out_1
       number: 7
       mode: OUTPUT
-      inverted: true
+      inverted: false
 
   - platform: gpio
     name: "light9"
@@ -131,7 +131,7 @@ switch:
       pcf8574: pcf8574_hub_out_2
       number: 0
       mode: OUTPUT
-      inverted: true
+      inverted: false
 
   - platform: gpio
     name: "light10"
@@ -140,7 +140,7 @@ switch:
       pcf8574: pcf8574_hub_out_2
       number: 1
       mode: OUTPUT
-      inverted: true
+      inverted: false
 
   - platform: gpio
     name: "light11"
@@ -149,7 +149,7 @@ switch:
       pcf8574: pcf8574_hub_out_2
       number: 2
       mode: OUTPUT
-      inverted: true
+      inverted: false
 
   - platform: gpio
     name: "light12"
@@ -158,7 +158,7 @@ switch:
       pcf8574: pcf8574_hub_out_2
       number: 3
       mode: OUTPUT
-      inverted: true
+      inverted: false
 
   - platform: gpio
     name: "light13"
@@ -167,7 +167,7 @@ switch:
       pcf8574: pcf8574_hub_out_2
       number: 4
       mode: OUTPUT
-      inverted: true
+      inverted: false
 
   - platform: gpio
     name: "light14"
@@ -176,7 +176,7 @@ switch:
       pcf8574: pcf8574_hub_out_2
       number: 5
       mode: OUTPUT
-      inverted: true
+      inverted: false
 
   - platform: gpio
     name: "light15"
@@ -185,7 +185,7 @@ switch:
       pcf8574: pcf8574_hub_out_2
       number: 6
       mode: OUTPUT
-      inverted: true
+      inverted: false
 
   - platform: gpio
     name: "light16"
@@ -194,7 +194,7 @@ switch:
       pcf8574: pcf8574_hub_out_2
       number: 7
       mode: OUTPUT
-      inverted: true
+      inverted: false
 
 binary_sensor:
   - platform: gpio
@@ -203,7 +203,7 @@ binary_sensor:
       pcf8574: pcf8574_hub_in_1
       number: 0
       mode: INPUT
-      inverted: true
+      inverted: false
     on_press:
     - switch.toggle: "light1"
 
@@ -213,7 +213,7 @@ binary_sensor:
       pcf8574: pcf8574_hub_in_1
       number: 1
       mode: INPUT
-      inverted: true
+      inverted: false
     on_press:
     - switch.toggle: "light2"
 
@@ -223,7 +223,7 @@ binary_sensor:
       pcf8574: pcf8574_hub_in_1
       number: 2
       mode: INPUT
-      inverted: true
+      inverted: false
     on_press:
     - switch.toggle: "light3"
 
@@ -233,7 +233,7 @@ binary_sensor:
       pcf8574: pcf8574_hub_in_1
       number: 3
       mode: INPUT
-      inverted: true
+      inverted: false
     on_press:
     - switch.toggle: "light4"
 
@@ -243,7 +243,7 @@ binary_sensor:
       pcf8574: pcf8574_hub_in_1
       number: 4
       mode: INPUT
-      inverted: true
+      inverted: false
     on_press:
     - switch.toggle: "light5"
 
@@ -253,7 +253,7 @@ binary_sensor:
       pcf8574: pcf8574_hub_in_1
       number: 5
       mode: INPUT
-      inverted: true
+      inverted: false
     on_press:
     - switch.toggle: "light6"
 
@@ -263,7 +263,7 @@ binary_sensor:
       pcf8574: pcf8574_hub_in_1
       number: 6
       mode: INPUT
-      inverted: true
+      inverted: false
     on_press:
     - switch.toggle: "light7"
 
@@ -273,7 +273,7 @@ binary_sensor:
       pcf8574: pcf8574_hub_in_1
       number: 7
       mode: INPUT
-      inverted: true
+      inverted: false
     on_press:
     - switch.toggle: "light8"
 
@@ -283,7 +283,7 @@ binary_sensor:
       pcf8574: pcf8574_hub_in_2
       number: 0
       mode: INPUT
-      inverted: true
+      inverted: false
     on_press:
     - switch.toggle: "light9"
 
@@ -293,7 +293,7 @@ binary_sensor:
       pcf8574: pcf8574_hub_in_2
       number: 1
       mode: INPUT
-      inverted: true
+      inverted: false
     on_press:
     - switch.toggle: "light10"
 
@@ -303,7 +303,7 @@ binary_sensor:
       pcf8574: pcf8574_hub_in_2
       number: 2
       mode: INPUT
-      inverted: true
+      inverted: false
     on_press:
     - switch.toggle: "light11"
 
@@ -313,7 +313,7 @@ binary_sensor:
       pcf8574: pcf8574_hub_in_2
       number: 3
       mode: INPUT
-      inverted: true
+      inverted: false
     on_press:
     - switch.toggle: "light12"
 
@@ -323,7 +323,7 @@ binary_sensor:
       pcf8574: pcf8574_hub_in_2
       number: 4
       mode: INPUT
-      inverted: true
+      inverted: false
     on_press:
     - switch.toggle: "light13"
 
@@ -333,7 +333,7 @@ binary_sensor:
       pcf8574: pcf8574_hub_in_2
       number: 5
       mode: INPUT
-      inverted: true
+      inverted: false
     on_press:
     - switch.toggle: "light14"
 
@@ -343,7 +343,7 @@ binary_sensor:
       pcf8574: pcf8574_hub_in_2
       number: 6
       mode: INPUT
-      inverted: true
+      inverted: false
     on_press:
     - switch.toggle: "light15"
 
@@ -353,7 +353,7 @@ binary_sensor:
       pcf8574: pcf8574_hub_in_2
       number: 7
       mode: INPUT
-      inverted: true
+      inverted: false
     on_press:
     - switch.toggle: "light16"
 
